@@ -120,7 +120,7 @@ function App() {
   return (
     <div className="game-container">
       <header>
-        <h1>KidWorlde</h1>
+        <h1>Kiddle</h1>
         <div className="subtitle">Can you guess the 3-letter word?</div>
       </header>
 
@@ -174,7 +174,7 @@ function App() {
       <div className="keyboard">
         {['QWERTYUIOP', 'ASDFGHJKL', 'ZXCVBNM'].map((row, i) => (
           <div key={i} className="kb-row">
-            {i === 2 && <button className="kb-key wide" onClick={handleEnter}>GO</button>}
+            {i === 2 && <button className="kb-key wide go-btn" onClick={handleEnter}>GO</button>}
             {row.split('').map(char => (
               <button
                 key={char}
@@ -184,7 +184,7 @@ function App() {
                 {char}
               </button>
             ))}
-            {i === 2 && <button className="kb-key wide" onClick={handleDelete}>⌫</button>}
+            {i === 2 && <button className="kb-key wide delete-btn" onClick={handleDelete}>⌫</button>}
           </div>
         ))}
       </div>

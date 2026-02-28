@@ -177,6 +177,16 @@ h1 {
   font-size: 1rem;
 }
 
+.kb-key.go-btn {
+  background-color: var(--kid-green);
+  color: white;
+}
+
+.kb-key.delete-btn {
+  background-color: var(--kid-pink);
+  color: white;
+}
+
 .kb-key.correct { background-color: var(--correct); color: white; }
 .kb-key.present { background-color: var(--present); color: white; }
 .kb-key.absent { background-color: var(--absent); color: white; }
